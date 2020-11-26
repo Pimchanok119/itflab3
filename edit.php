@@ -12,7 +12,7 @@ $name = $_POST['name'];
 $comment = $_POST['comment'];
 
 
-$sql = "UPDATE guestbook SET Comment='$comment' WHERE Name='$name' ";
+$sql = "UPDATE guestbook SET Comment='$comment' WHERE Name='$name' ";  #คำสั่งแก้ไขข้อมูล set คือค่าที่จะเปลี่ยน where คือจะเปลี่ยนตรงไหน
 
 
 if (mysqli_query($conn, $sql)) {
