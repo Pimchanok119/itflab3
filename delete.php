@@ -12,7 +12,7 @@ $name = $_POST['name'];
 $comment = $_POST['comment'];
 
 
-$sql = $sql = "DELETE FROM guestbook WHERE name='$name'";
+$sql = $sql = "DELETE FROM guestbook WHERE name='$name'";  #คำสั่งลบข้อมูล where คือ ลบทั้งrowเมื่อ [ข้างหลังwhere] เท่ากับ...
 $sql = "DELETE FROM guestbook WHERE Comment='$comment'";
 
 if (mysqli_query($conn, $sql)) {
